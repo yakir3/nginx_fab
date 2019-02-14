@@ -1,0 +1,17 @@
+NODE_TEST_1:
+  conf: {local_conf: /opt/fab_test/local_rsync/CONF/NODE_TEST_1, remote_conf: /usr/local/nginx/conf}
+  exclude_opts: foo,bar
+  info: node-test-1
+  nginx_command: /usr/local/nginx/sbin/nginx
+  real_ip: [192.168.133.131, 192.168.133.132]
+NODE_TEST_2:
+  conf: {local_conf: /opt/fab_test/local_rsync/CONF/NODE_TEST_2, remote_conf: /usr/local/nginx/conf}
+  exclude_opts: ''
+  info: node-test-2
+  nginx_command: /usr/local/nginx/sbin/nginx
+  real_ip: [192.168.133.131, 192.168.133.132]
+rsync_server: rsync://192.168.133.132
+ssh_key: /opt/nginx_fab/conf/server.key
+ssh_pass: ''
+ssh_port: 6699
+ssh_user: test
