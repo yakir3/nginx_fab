@@ -56,7 +56,7 @@ def _confirm_init():
         c = input(green('是否要初始化新nginx文件(Yy|Nn)：'))
         if c == 'Y' or c == 'y':
             print(green('##########初始化Nginx配置并写入本地yaml文件##########'))
-            vip_host = input(green('请输入vip_host(eg：WTT_100_45)：'))
+            vip_host = input(green('请输入vip_host(eg：TEST_HOST_1)：'))
             real_ip = input(green('请输入nginx真实ip(以,为分隔符)：'))
             exclude_opts = input(green('请输入排除同步的目录(以,为分隔符)：'))
             info = input(green('请输入备注信息：'))
